@@ -35,7 +35,8 @@ def main():
         for line in sys.stdin:
             line_cnt += 1
             line_match = re.match(pattern, line)
-            if not line_match: continue
+            if not line_match:
+                continue
 
             status_code = int(line_match.group(3))
             file_size = int(line_match.group(4))
