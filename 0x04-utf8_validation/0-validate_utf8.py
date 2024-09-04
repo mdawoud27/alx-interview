@@ -2,7 +2,7 @@
 """UTF-8 Validation"""
 
 
-def validUTF8(data: list[int]) -> bool:
+def validUTF8(data):
     """
     Function that determines if a given data set represents a valid
     UTF-8 encoding.
