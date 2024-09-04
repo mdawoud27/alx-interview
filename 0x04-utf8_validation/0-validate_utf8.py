@@ -10,8 +10,7 @@ def validUTF8(data):
     remaining_bytes = 0
 
     for byte in data:
-        if byte < 0 or byte > 255:
-            return False
+        byte = byte & 0xFF
         if remaining_bytes == 0:
             if (byte >> 5) == 0b110:
                 remaining_bytes = 1
