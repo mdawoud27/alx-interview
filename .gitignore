@@ -1,3 +1,6 @@
 push
+.idea/
 __pycache__
 *main.py
+0x01-lockboxes/__pycache__
+0x02-minimum_operations/__pycache__
