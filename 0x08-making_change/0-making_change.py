@@ -3,21 +3,21 @@
 
 
 def makeChange(coins, total):
-  """
-  Return:
-    fewest number of coins needed to meet total.
-  """
-  if total <= 0:
-    return 0
-  
-  coins.sort(reverse=True)
+    """
+    Return:
+        fewest number of coins needed to meet total.
+    """
+    if total <= 0:
+        return 0
 
-  count = 0
-  for coin in coins:
-    if total == 0:
-      break
+    coins.sort(reverse=True)
 
-    count += total // coin
-    total %= coin
+    count = 0
+    for coin in coins:
+        if total == 0:
+            break
 
-  return count if total == 0 else -1
+        count += total // coin
+        total %= coin
+
+    return count if total == 0 else -1
