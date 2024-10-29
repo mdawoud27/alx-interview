@@ -3,6 +3,7 @@
 
 
 def isWinner(x, nums):
+    """isWinner"""
     def sieve(limit):
         """Use Sieve of Eratosthenes to precompute prime numbers up to limit"""
         is_prime = [True] * (limit + 1)
